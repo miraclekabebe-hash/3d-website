@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MIRACLE TECH — Space Tech UI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loader-ring"></div>
+    <p class="loader-text">MIRACLE TECH</p>
+  </div>
+
+  <div class="custom-cursor" id="customCursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <header class="topbar">
+    <div class="brand">MIRACLE TECH</div>
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#showcase">Showcase</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav-cta">Launch</button>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <span class="eyebrow">FUTURE SPACE TECH</span>
+        <h1>Immersive digital craft for the next cosmic wave.</h1>
+        <p>We build cinematic brand experiences with fluid 3D interfaces, neon glassmorphism, and premium motion systems.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#showcase">View 3D Lab</a>
+          <a class="btn btn-secondary" href="#contact">Start a Mission</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="floating-panel">
+          <div class="panel-tag">Asset</div>
+          <div class="panel-title">Orbital UX Slider</div>
+          <p>Slide through advanced product concepts in 3D space.</p>
+        </div>
+
+        <div class="slider-3d" id="slider3D">
+          <button class="slider-control prev" data-direction="prev">‹</button>
+          <div class="slider-track">
+            <article class="slide active" data-index="0">
+              <div class="slide-media">
+                <img src="galaxyinterface.jpg" alt="Galaxy Interface" />
+              </div>
+              <div class="slide-copy">
+                <h3>Galaxy Interface</h3>
+                <p>Glowing grids, layered depth, and immersive interactions.</p>
+              </div>
+            </article>
+            <article class="slide" data-index="1">
+              <div class="slide-media">
+                <img src="spacedashboard.jpg" alt="Space Dashboard" />
+              </div>
+              <div class="slide-copy">
+                <h3>Space Dashboard</h3>
+                <p>Neon data panels with interactive hover depth.</p>
+              </div>
+            </article>
+            <article class="slide" data-index="2">
+              <div class="slide-media">
+                <img src="hyperloop.jpg" alt="Hyperloop Studio" />
+              </div>
+              <div class="slide-copy">
+                <h3>Hyperloop Studio</h3>
+                <p>Premium motion design for futuristic launches.</p>
+              </div>
+            </article>
+          </div>
+          <button class="slider-control next" data-direction="next">›</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-heading">
+        <span>About MIRACLE TECH</span>
+        <h2>We transform bold ideas into high-end space tech experiences.</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card depth-card">
+          <h3>Brand Vision</h3>
+          <p>Creating luminous digital systems that feel alive, intelligent, and futuristic.</p>
+        </div>
+        <div class="about-card depth-card">
+          <h3>Design Philosophy</h3>
+          <p>Glassmorphism, neon gradients, and subtle 3D motion for premium perception.</p>
+        </div>
+        <div class="about-card depth-card">
+          <h3>Delivery</h3>
+          <p>Fast prototypes, polished launches, and responsive experiences across every screen.</p>
+        </div>
+        <div class="about-card depth-card ceo-card">
+          <div class="card-picture">
+            <img src="CEO abd top engineer.png" alt="Mukisa Miracle" />
+          </div>
+          <h3>Mukisa Miracle</h3>
+          <p>CEO &amp; Top Engineer driving MIRACLE TECH forward with space-grade product design and engineering excellence.</p>
+          <ul class="degree-list">
+            <li>B.Sc. Computer Engineering — MIT</li>
+            <li>M.S. Aerospace Systems — Caltech</li>
+            <li>MBA Technology Management — Stanford</li>
+            <li>Executive AI Leadership — ETH Zurich</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services" id="services">
+      <div class="section-heading">
+        <span>What We Do</span>
+        <h2>Space-grade services engineered for modern digital brands.</h2>
+      </div>
+      <div class="services-grid">
+        <article class="service-card depth-card">
+          <h3>3D Experience Design</h3>
+          <p>Interactive product journeys with layered motion and depth.</p>
+        </article>
+        <article class="service-card depth-card">
+          <h3>Motion Systems</h3>
+          <p>Anime-driven transitions, micro-interactions, and smooth scroll triggers.</p>
+        </article>
+        <article class="service-card depth-card">
+          <h3>Creative Technology</h3>
+          <p>WebGL-ready visuals, ambient scenes, and futuristic UI development.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section showcase" id="showcase">
+      <div class="section-heading">
+        <span>3D Showcase</span>
+        <h2>Explore interactive visuals, floating UI systems, and cinematic digital spaces.</h2>
+      </div>
+      <div class="showcase-grid">
+        <div class="showcase-panel depth-card">
+          <div class="showcase-label">Scene</div>
+          <h3>Orbit Studio</h3>
+          <p>Dynamic parallax layers with responsive depth and hover drift.</p>
+        </div>
+        <div class="showcase-hero">
+          <div class="three-wrapper" id="threeScene"></div>
+          <div class="showcase-overlay">
+            <span>Live 3D</span>
+            <h3>CGI Neon Sphere</h3>
+          </div>
+        </div>
+        <div class="showcase-panel depth-card">
+          <div class="showcase-label">Feature</div>
+          <h3>Floating Cards</h3>
+          <p>Layered content blocks with hover tilt and glass reflections.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section testimonials" id="testimonials">
+      <div class="section-heading">
+        <span>Testimonials</span>
+        <h2>Premium feedback from design leaders who launch with us.</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card depth-card">
+          <p>“MIRACLE TECH turned our concept into a polished, futuristic flagship experience. The motion felt cinematic and highly responsive.”</p>
+          <strong>- Nova Labs</strong>
+        </div>
+        <div class="testimonial-card depth-card">
+          <p>“Every detail was refined with neon depth and premium interaction design. The result exceeded our launch expectations.”</p>
+          <strong>- Orion Collective</strong>
+        </div>
+        <div class="testimonial-card depth-card">
+          <p>“A next-level digital product, built with a clean futuristic aesthetic and smooth 3D interface transitions.”</p>
+          <strong>- Aether Systems</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="section-heading">
+        <span>Contact</span>
+        <h2>Let’s design your next immersive digital frontier.</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info depth-card">
+          <h3>Get in touch</h3>
+          <p>hello@miracletech.space</p>
+          <p>+256 779665454</p>
+          <p>Virtual HQ — Global launchpad</p>
+        </div>
+        <form class="contact-form depth-card">
+          <label>
+            <span>Name</span>
+            <input type="text" placeholder="Mukisa Miracle" />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" placeholder="miracle@gmail.com" />
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea placeholder="Tell us about your project"></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">Submit Request</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 MIRACLE TECH — Crafted for cosmic digital brands.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js" crossorigin="anonymous"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
